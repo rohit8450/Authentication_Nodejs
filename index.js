@@ -9,6 +9,9 @@ const flash = require('connect-flash');
 
 const app = express();
 const PORT = process.env.PORT || 8000;
+
+
+app.use(express.static('./assets'));
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views',);
 

@@ -17,50 +17,9 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/css/login.css">
     <title>Authentications</title>
-    <style>
-  
-      body {
-        font-family: 'Bangers', cursive !important;
-        font-weight:bolder;
-        font-size: large;
-        overflow: hidden;
-        background: linear-gradient(120deg, #68eacc, #2d5cfe);
-       
 
-      }
-      .customborder {
-        border-radius: 20%;
-        border: 3px solid #20cee9;
-      }
-     .btn {
-      position: relative;
-      border-radius: 20px;
-      cursor: pointer;
-      box-shadow: 5px 5px 5px;
-     }
-     .navbar-brand {
-      font-size: larger;
-      position: absolute;
-      top: 10px;
-      left: 20px;
-     }
-     .card-link {
-      font-weight: bold;
-      position: relative;
-      left: 20px;
-
-     }
-     .container {
-      position: absolute;
-      bottom: 20px;
-      left: 100px;
-     }
-     .text-center {
-      position: relative;
-      top:5px;
-     }
-    </style>
   </head>
 
   <body>
@@ -156,11 +115,11 @@
           <div class="d-grid gap-3 mb-3">
             <input
               type="submit"
-              class="btn btn-lg btn-block btn-outline-primary"
+              class="btn-login btn-block btn-outline-primary"
               value="Login"
             />
-            <a class="btn btn-lg btn-success" href="/google"
-              >Login With Google ...</a
+            <a class="btn-google btn-success" href="/google"
+              ><img src="/images/google.png" alt="" id = "google-icon"></a
             >
           </div>
           <p>Click Here ? <a class="card-link" href="/signup">Register Now</a></p>
