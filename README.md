@@ -1,14 +1,10 @@
-# Node Passport Authentication
+# Nodejs Authentication
 
 This repo contains code for Local email-passport authentication and Google Authentication.
 
-## Blog (Local Auth) : [Here](https://desiprogrammer.com/blogs/node-express-passport-email-authentication)
+## Deployment Link : [Here](https://authentication-nodejs-0d7w.onrender.com)
 
-## Blog (Google Auth) : [Here](https://desiprogrammer.com/blogs/nodejs-express-google-authentication)
-
-## Tutorial (Local Auth) : [Here](https://www.youtube.com/watch?v=-ZxXS9gsWX4)
-
-## Tutorial (Google Auth) : [Here](https://www.youtube.com/watch?v=d-IToO3gLrM)
+## Project Demo : [Here]()
 
 ## 1. USAGE
 
