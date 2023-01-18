@@ -8,14 +8,13 @@ const passport = require('passport');
 const flash = require('connect-flash');
 
 const app = express();
-
+const PORT = process.env.PORT || 8000;
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views',);
 
 app.use(express.urlencoded({ extended: true }));
 
-const mongoURI = require('./config/monkoKEY');
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true, },).then(() => console.log("Connected !"),);
+const mongoURI = require('./config/mongoose');
 
 app.use(cookieParser('random'));
 
@@ -43,7 +42,5 @@ app.use(function (req, res, next) {
 
 app.use(require('./controller/routes.js'));
 
-
-const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => console.log("Server Started At " + PORT));
