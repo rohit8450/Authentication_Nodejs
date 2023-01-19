@@ -15,8 +15,6 @@ module.exports = function (passport) {
         user.findOne({ email: profile.emails[0].value }).then((data) => {
             if (data) {
                 // user exists
-                // update data
-                // I am skipping that part here, may Update Later
                 return done(null, data);
             } else {
                 // create a user

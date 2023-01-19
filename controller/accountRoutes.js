@@ -5,8 +5,8 @@ const resetToken = require('../model/resetTokens');
 const user = require('../model/user');
 const mailer = require('./sendMail');
 const bcryptjs = require('bcryptjs');
-const bodyParser = require('body-parser');
-const fetch = require('cross-fetch');
+// const bodyParser = require('body-parser');
+// const fetch = require('cross-fetch');
 const { stringify } = require('querystring');
 
 function checkAuth(req, res, next) {
@@ -25,8 +25,7 @@ router.get('/user/send-verification-email', checkAuth, async (req, res) => {
     // check if user is google or already verified
     if (req.user.isVerified || req.user.provider == 'google') {
         // already verified or google user
-        // since we won't show any such option in the UI 
-        // most probably this is being called by mistake or can be an attack
+       
         // simply redirect to profile 
         res.redirect('/profile');
     } else {

@@ -36,7 +36,7 @@ router.get('/signup', (req, res) => {
 router.post('/signup', (req, res) => {
     // get all the values 
     const { email, username, password, confirmpassword } = req.body;
-    // check if the are empty 
+    // check if  empty 
     if (!email || !username || !password || !confirmpassword) {
         res.render("signup", { err: "All Fields Required !", csrfToken: req.csrfToken() });
     } else if (password != confirmpassword) {
@@ -44,7 +44,7 @@ router.post('/signup', (req, res) => {
     } else {
 
         // validate email and username and password 
-        // skipping validation
+    
         // check if a user exists
         user.findOne({ $or: [{ email: email }, { username: username }] }, function (err, data) {
             if (err) throw err;
